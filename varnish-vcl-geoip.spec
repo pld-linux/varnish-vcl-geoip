@@ -16,6 +16,7 @@ Source0:	varnish-geoip-%{version}.tar.bz2
 URL:		http://github.com/cosimo/varnish-geoip/
 BuildRequires:	perl-base
 %if %{with tests}
+BuildRequires:	GeoIP-db-City
 BuildRequires:	GeoIP-devel
 BuildRequires:	perl-JSON-XS
 BuildRequires:	perl-tools-devel >= 1:5.10
